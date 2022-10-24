@@ -1,0 +1,91 @@
+.container{
+    width: 80%;
+    background-color: #fff;
+    margin: 2rem auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 5px 10px 10px 5px var(--filter);
+}
+
+.featuredCard{
+    border-left: 8px solid var(--desat-cyan);
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+
+.info{
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 88px;
+}
+
+.infoTop{
+    display: flex;
+    align-items: center;
+}
+
+.company{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--desat-cyan);
+    margin: 0;
+}
+
+.infoTop span{
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 1.2rem;
+    display: inline-block;
+    margin-left: 1rem;
+    align-self: center;
+    line-height: 0.8rem;
+
+}
+
+.new{
+    background-color: var(--desat-cyan);
+}
+
+.featured{
+    background-color: var(--very-dark-cyan);
+}
+
+.role{
+    margin: 0;
+}
+
+.infoBottom{
+    display: flex;
+    align-items: center;
+}
+
+.infoBottom span{
+    color: var(--dark-cyan);
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tag{
+    color:var(--desat-cyan);
+    background-color: var(--filter);
+    font-weight: 700;
+    margin-left: 12px;
+    padding: 6px;
+    border-radius: 4px;
+}
