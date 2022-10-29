@@ -39,6 +39,7 @@
     margin: 0;
 }
 
+
 .infoTop span{
     font-weight: 700;
     font-size: 0.8rem;
@@ -62,6 +63,11 @@
 
 .role{
     margin: 0;
+}
+
+.role:hover{
+    cursor: pointer;
+    color: var(--desat-cyan);
 }
 
 .infoBottom{
@@ -88,4 +94,10 @@
     margin-left: 12px;
     padding: 6px;
     border-radius: 4px;
+}
+
+.tag:hover{
+    color: #fff;
+    background-color: var(--desat-cyan);
+    cursor: pointer;
 }

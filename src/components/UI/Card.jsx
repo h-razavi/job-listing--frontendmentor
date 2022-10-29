@@ -5,7 +5,7 @@ export default function Card(props) {
     let cardClasses = props.featured ? classes.container +' '+classes.featuredCard : classes.container;
 
   return (
-    <div className={cardClasses}>
+    <div className={cardClasses} id={props.id} >
       <div className={classes.left}>
         <img src={props.logo} alt="company logo" />
         <div className={classes.info}>
@@ -27,13 +27,13 @@ export default function Card(props) {
         </div>
       </div>
       <div className={classes.right}>
-        <div className={classes.tag}>{props.role}</div>
-        <div className={classes.tag}>{props.level}</div>
+        <div className={classes.tag} onClick={props.onAddFilter}>{props.role}</div>
+        <div className={classes.tag} onClick={props.onAddFilter}>{props.level}</div>
         {props.languages.map((lang) => (
-          <div className={classes.tag}>{lang}</div>
+          <div className={classes.tag} onClick={props.onAddFilter}>{lang}</div>
         ))}
         {props.tools.map((tool) => (
-          <div className={classes.tag}>{tool}</div>
+          <div className={classes.tag} onClick={props.onAddFilter}>{tool}</div>
         ))}
       </div>
     </div>

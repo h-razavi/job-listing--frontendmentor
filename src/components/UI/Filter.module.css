@@ -1,0 +1,26 @@
+  
+  .filterTag{
+    display: flex;
+  }
+  
+  .filterItem{
+    width: fit-content;
+    color:var(--desat-cyan);
+      background-color: var(--filter);
+      font-weight: 700;
+      margin-left: 12px;
+      padding: 6px;
+      border-radius: 4px 0 0 4px;
+  }
+  
+  .closeButton{
+    color: #fff;
+    background-color: var(--desat-cyan);
+    border-radius: 0 4px 4px 0;
+    width: 24px;
+  }
+  
+  .closeButton:hover{
+    background-color: #000;
+    cursor: pointer;
+  }
