@@ -1,5 +1,6 @@
 *,*::after,*::before{
   box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
 }
 
 body{
@@ -20,5 +21,33 @@ body{
   background-image: url(/assets/top-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+header{
+  width: 80%;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 2rem;
+  transform: translateY(-50%);
+  border-radius: 0.5rem;
+  box-shadow: 5px 10px 10px 5px var(--filter);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filters{
+  display: flex;
+}
+
+.clear{
+  color: var(--dark-cyan);
+  font-weight: 700;
+}
+
+.clear:hover{
+  text-decoration: underline;
+  color: var(--desat-cyan);
+  cursor: pointer;
 }
 
